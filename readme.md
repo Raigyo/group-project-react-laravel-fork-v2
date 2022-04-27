@@ -2,7 +2,7 @@
 
 ![Becode logo](https://raw.githubusercontent.com/Raigyo/react-character-manager/master/img/becode-logo.png)
 
-_ April 2019 (edited April 2022)_
+_April 2019 (edited April 2022)_
 
 > 🔨 The job was to take the [application](https://github.com/PaulineRoppe/jepsenbrite) of another group and while fixing some minor bugs, adding new features. Obviously we had to keep the design of the original owner. You can check the original application on this [link](https://jepsen-brite.herokuapp.com/).
 >
