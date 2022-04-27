@@ -77481,7 +77481,7 @@ var PoseGroup = (function (_super) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -85729,13 +85729,8 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_brand__WEBPACK_IMPORTED_MODULE_1__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_display_all__WEBPACK_IMPORTED_MODULE_2__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "https://icons.iconarchive.com/icons/jonathan-rey/simpsons/256/Homer-Simpson-02-Donut-icon.png",
+        src: "../images/simpsons-donut.png",
         className: "homer"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "vrincesse"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://4.bp.blogspot.com/-6cdKuzKOcDU/VAN-RUsAIZI/AAAAAAAAAPU/gX2zRU8TVLM/s1600/baron2400.png",
-        className: "baron"
       })));
     }
   }]);
@@ -86087,7 +86082,7 @@ function (_Component) {
 
       var mapDiv = document.getElementById("".concat(this.props.mapId));
       this.resize(mapDiv);
-      window.addEventListener('resize', function () {
+      window.addEventListener("resize", function () {
         return _this.resize(mapDiv);
       });
     }
@@ -86110,11 +86105,11 @@ function (_Component) {
                 return _context.abrupt("return");
 
               case 2:
-                document.getElementById("".concat(this.props.mapId)).innerHTML = '';
+                document.getElementById("".concat(this.props.mapId)).innerHTML = "";
                 map = new OpenLayers.Map(this.props.mapId);
-                map.addLayer(new OpenLayers.Layer.OSM('osmLayer', ['https://a.tile.openstreetmap.org/${z}/${x}/${y}.png', 'https://b.tile.openstreetmap.org/${z}/${x}/${y}.png', 'https://c.tile.openstreetmap.org/${z}/${x}/${y}.png']));
+                map.addLayer(new OpenLayers.Layer.OSM("osmLayer", ["https://a.tile.openstreetmap.org/${z}/${x}/${y}.png", "https://b.tile.openstreetmap.org/${z}/${x}/${y}.png", "https://c.tile.openstreetmap.org/${z}/${x}/${y}.png"]));
                 _context.next = 7;
-                return fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(this.props.address));
+                return fetch("https://nominatim.openstreetmap.org/search?format=json&q=" + encodeURIComponent(this.props.address));
 
               case 7:
                 response = _context.sent;
@@ -86149,13 +86144,13 @@ function (_Component) {
   }, {
     key: "resize",
     value: function resize(map) {
-      if (map) map.style.height = map.clientWidth * 0.71 + 'px';
+      if (map) map.style.height = map.clientWidth * 0.71 + "px";
     }
   }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "".concat(this.props.className),
+        className: "col-6 ".concat(this.props.className),
         id: this.props.mapId
       });
     }
@@ -86977,7 +86972,7 @@ function (_Component) {
           key: item.author
         }, item.author)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "container video-container mt-5"
-        }, item.media_type === 'image' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        }, item.media_type === "image" ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "imgDisplay",
           alt: "image event",
           src: item.image_url
@@ -86995,14 +86990,14 @@ function (_Component) {
           className: "info"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "infoIcons",
-          src: "https://www.redfcu.org/Assets/uploads/images/Find%20a%20LocationBranch.png"
+          src: "../images/icons/location-icon.png"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "infoTxt"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, item.street), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, item.postal_code, ", ", item.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, item.country))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "info"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "infoIcons",
-          src: "https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/calendar-icon.png"
+          src: "../images/icons/calendar-icon.png"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "infoTxt"
         }, item.date_event))))));
@@ -87108,7 +87103,7 @@ function (_Component) {
     key: "handleChange",
     value: function handleChange(event) {
       var target = event.target;
-      var value = target.type === 'checkbox' ? target.checked : target.value;
+      var value = target.type === "checkbox" ? target.checked : target.value;
       var name = target.name;
       this.setState(_defineProperty({}, name, value));
 
@@ -87182,7 +87177,7 @@ function (_Component) {
           key: item.name
         }, item.name, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "(by ", item.author, ")"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "imgDiv border video-container"
-        }, item.media_type === 'image' ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        }, item.media_type === "image" ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "imgDisplay ",
           alt: "image event",
           src: item.image_url
@@ -87204,21 +87199,21 @@ function (_Component) {
           className: "info"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "infoIcons",
-          src: "https://www.redfcu.org/Assets/uploads/images/Find%20a%20LocationBranch.png"
+          src: "../images/icons/location-icon.png"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "infoTxt"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, item.street), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, item.postal_code, ", ", item.city), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, item.country))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "info"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "infoIcons",
-          src: "http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/calendar-icon.png"
+          src: "../images/icons/calendar-icon.png"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "infoTxt"
         }, item.date_event)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "info"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "infoIcons",
-          src: "https://stickeroid.com/uploads/pic/full-pngimg/9d06df374b8bab48fc3ba0a7e1a6f4ccd2212d81.png"
+          src: "../images/icons/euro-icon.png"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
           className: "infoTxt"
         }, item.price)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -87227,16 +87222,16 @@ function (_Component) {
           className: "m-auto"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "infoIcons2",
-          src: "http://pngimages.net/sites/default/files/upload-png-image-77090.png"
+          src: "../images/icons/posted-icon.png"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Posted on ", item.created_at)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "m-auto"
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
           className: "infoIcons2",
-          src: "https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_update-512.png"
+          src: "../images/icons/last-update.webp"
         }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Last update: ", item.updated_at)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "m-auto"
-        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "List of suscribers:\xA0 ")), _this2.state.suscribersList.map(function (item) {
-          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "  \xA0", item.username, " \xA0");
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "List of suscribers:\xA0", " ")), _this2.state.suscribersList.map(function (item) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " ", "\xA0", item.username, " \xA0");
         })), suscribeButton, shareButton, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "m-auto"
         }, editButton))))));
@@ -89387,8 +89382,8 @@ function (_Component) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/thibaut/Documents/Challenges/jepsenbrite/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/thibaut/Documents/Challenges/jepsenbrite/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/chilot/development/laravel-do-nut-v2/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/chilot/development/laravel-do-nut-v2/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

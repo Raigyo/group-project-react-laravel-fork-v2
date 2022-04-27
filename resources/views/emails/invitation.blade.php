@@ -72,7 +72,7 @@
         <p>
         A DoNutEvents member send you an invitation to an event : <b> {{$event}} </b>
                 </p>
-        <p> Go to the site to respond at this invitation and meet the <i>EventDab
+        <p> Go to the site to respond at this invitation and meet the <i>DoNutEvents
                 Community</i> !</p>
 
         <p>See you soon on <b>DoNutEvents!</b></p>

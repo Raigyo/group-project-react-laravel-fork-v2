@@ -27,12 +27,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css"
     />
+    <style>
+        .map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
     <script src="https://unpkg.com/@babel/standalone"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.5.2/umd/react.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.5.2/umd/react-dom.production.min.js"></script>
     <!--script src="../dist/react-leaflet.min.js"></script-->
-    <script src="/js/OpenLayers.js"></script>
+    <script src="js/OpenLayers.js"></script>
 
     </head>
     <body>
