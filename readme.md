@@ -2,7 +2,7 @@
 
 The job was to take the [application](https://github.com/PaulineRoppe/jepsenbrite) of another group and while fixing some minor bugs, adding new features. Obviously we had to keep the design of the original owner. You can check the original application on this [link](https://jepsen-brite.herokuapp.com/).
 
-The application is still a CRUD Application to manage events online. If you want to know how does it look like check it out [here]()
+The application is still a CRUD Application to manage events online. If you want to know how does it look like check it out [here](https://raigyo-do-nut-events.herokuapp.com/#/)
 
 ## Built With
 
